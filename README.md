@@ -24,3 +24,44 @@ Target Distribution:
 🟢 Non-Disaster Tweets: ~57%
 
 🔴 Disaster Tweets: ~43%
+
+# Technical Implementation
+## Preprocessing Pipeline
+Text Cleaning: URL removal, mention/hashtag handling, punctuation removal
+
+Tokenization: Word tokenization with NLTK
+
+Normalization: Lowercasing, stopword removal, lemmatization
+
+Advanced Processing: POS tagging for contextual understanding
+
+## Feature Engineering
+Text Features:
+
+1. TF-IDF vectors with n-grams (1,2)
+2 Custom vocabulary based on disaster terminology
+3. Structural Features:
+
+- Text length, word count, character count
+- Lexical diversity and complexity metrics
+- Social media patterns (hashtags, mentions, URLs)
+
+###Domain-Specific Features:
+- Disaster keyword counts
+- Urgency indicators
+- Sentiment analysis scores
+- Emotional language markers
+
+## Models Implemented
+Model	Description	Key Features
+Logistic Regression + TF-IDF	Strong baseline model	Text features only
+Naive Bayes + TF-IDF	Fast probabilistic model	Efficient text classification
+Combined Features + LR	Advanced ensemble	Text + engineered features
+Random Forest	Tree-based ensemble	Numeric feature patterns
+
+ ##Model Performance
+Model	Validation F1 Score	Key Strengths
+Logistic Regression (TF-IDF)	~0.78-0.82	Interpretable, fast
+Combined Features + LR	~0.80-0.84	Best overall performance
+Ensemble Methods	~0.82-0.85	Most robust
+
