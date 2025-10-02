@@ -46,7 +46,7 @@ Text Features:
 - Lexical diversity and complexity metrics
 - Social media patterns (hashtags, mentions, URLs)
 
-###Domain-Specific Features:
+### Domain-Specific Features:
 - Disaster keyword counts
 - Urgency indicators
 - Sentiment analysis scores
@@ -59,7 +59,7 @@ Model	Description	Key Features
 3. Combined Features + LR	Advanced ensemble	Text + engineered features
 4. Random Forest	Tree-based ensemble	Numeric feature patterns
 
- ##Model Performance
+## Model Performance
 1. Model	Validation F1 Score	Key Strengths
 2. Logistic Regression (TF-IDF)	~0.78-0.82	Interpretable, fast
 3. Combined Features + LR	~0.80-0.84	Best overall performance
